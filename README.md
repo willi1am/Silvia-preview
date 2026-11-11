@@ -1,98 +1,61 @@
-Sito web — Dott.ssa Silvia Zagami
+# Sito web — Dott.ssa Silvia Zagami
 
-Sito web professionale della Dott.ssa Silvia Zagami, medico chirurgo specialista in Ostetricia e Ginecologia.
+Sito informativo professionale della Dott.ssa Silvia Zagami, specialista in Ostetricia e Ginecologia. Il progetto è **multipagina**, responsive e pubblicato tramite GitHub Pages.
 
-Stato del progetto
+## Stato del progetto
 
-* Versione di riferimento: 12.2
-* Repository: Silvia-preview
-* Ramo principale: main
-* Hosting: GitHub Pages
-* Tecnologie: HTML, CSS e JavaScript
-* Stato: sito online, in progressivo perfezionamento
+- **Versione dei file preparati:** v13.4 (aggiornamento navigazione)
+- **Versione attualmente online:** verificare sempre sul sito pubblico dopo il caricamento
+- **Repository:** `willi1am/Silvia-preview`
+- **Ramo di pubblicazione:** `main`
+- **Hosting:** GitHub Pages (`main` → `/(root)`)
+- **Tecnologie:** HTML, CSS e JavaScript, senza framework o servizi di hosting aggiuntivi
+- **Dominio personalizzato:** da configurare separatamente, quando acquistato
 
-Struttura
+## Struttura del sito
 
-Il sito è attualmente contenuto nel file index.html, che comprende struttura, stili, script e risorse incorporate.
+| File | Pagina |
+| --- | --- |
+| `index.html` | Home |
+| `chi-sono.html` | Profilo, formazione, esperienza ospedaliera |
+| `prestazioni.html` | Aree cliniche e prestazioni dettagliate |
+| `contatti.html` | Banchette, Ciriè, Torino e recapiti |
+| `privacy.html` | Informativa privacy |
+| `cookie.html` | Informazioni sui cookie |
 
-Le principali sezioni sono:
+Le sei pagine contengono attualmente gli stili e le risorse necessarie nei rispettivi HTML. I collegamenti interni sono relativi per funzionare sia su GitHub Pages sia con un dominio personalizzato.
 
-1. Homepage e presentazione
-2. Profilo professionale — Chi sono
-3. Contatti e sedi di ricevimento
-4. Ambiti di competenza
-5. Prestazioni e consulenze
-6. Informativa privacy e informazioni sui cookie
+## Aggiornare il sito da iPhone o iPad
 
-Il sito è responsive e utilizzabile da smartphone, tablet e computer.
+1. Salvare localmente lo ZIP completo della nuova versione, verificando che si apra.
+2. Prima di sostituire `main`, conservare un riferimento recuperabile della versione pubblicata tramite branch di backup o tag.
+3. Estrarre il pacchetto di pubblicazione. **Non caricare direttamente lo ZIP.**
+4. In GitHub → `Silvia-preview` → ramo **`main`**, usare `Upload files` e caricare i **sei file HTML** nella **radice** del repository.
+5. Se i file non possono essere caricati contemporaneamente, caricare prima le cinque pagine secondarie e **`index.html` per ultimo**.
+6. Salvare con un commit descrittivo, ad esempio `Pubblicazione sito Silvia v13.4`.
+7. Aprire il sito online e controllare Home, Chi sono, Prestazioni, Contatti, Privacy e Cookie, sia da smartphone sia da desktop.
 
-Pubblicazione
+**Attenzione:** non selezionare il ramo di backup per la pubblicazione. La modifica al README da sola non aggiorna il sito online.
 
-GitHub Pages pubblica il sito a partire dal ramo main.
+## Backup e versionamento
 
-Per aggiornare il sito:
+- Conservare uno ZIP completo per ciascuna release importante, scaricabile e apribile in locale.
+- Per versioni stabili, utilizzare un ramo o un tag nominato, ad esempio `backup-v12.2`, `v13.3`, `v13.4`.
+- GitHub conserva anche la cronologia dei commit; i backup devono permettere il ripristino senza ambiguità.
+- Non pubblicare screenshot privati, credenziali, documenti riservati o dati di pazienti nel repository pubblico.
 
-1. Preparare e verificare la nuova versione.
-2. Conservare un backup locale in formato ZIP.
-3. Sostituire index.html nel repository.
-4. Registrare la modifica tramite commit sul ramo main.
-5. Verificare il sito pubblico dopo la pubblicazione.
+## Privacy e contenuti
 
-Versionamento e backup
+- Il sito è informativo e non include un modulo per inviare dati clinici.
+- I collegamenti esterni, i trattamenti e le informative vanno rivalutati quando si attivano nuove funzioni, come prenotazioni e analytics.
+- La sede di Torino è indicata senza indirizzo pubblico, su richiesta.
+- La disponibilità di alcune prestazioni può variare in base alla sede: non promettere servizi non confermati.
+- Ogni informazione clinica e professionale deve essere approvata da Silvia prima della pubblicazione.
 
-Ogni aggiornamento deve prevedere:
+## Registro sintetico delle versioni
 
-* Numero di versione progressivo.
-* Descrizione delle modifiche.
-* File index.html aggiornato.
-* Archivio ZIP completo, utilizzabile offline.
-* Verifica dei collegamenti e del layout responsive.
-
-I backup sono conservati separatamente dal repository, in locale.
-
-Identità visiva
-
-* Palette principale: rosa cipria chiaro e avorio.
-* Stile: elegante, minimalista e professionale.
-* Logo: monogramma calligrafico personale.
-* Fotografia: immagini professionali autorizzate.
-* Tipografia: combinazione di caratteri serif e sans-serif.
-
-Privacy e sicurezza
-
-Il sito è principalmente informativo.
-
-Non sono previsti, nella configurazione di riferimento:
-
-* Account per gli utenti.
-* Database di pazienti.
-* Moduli interni di raccolta dati sanitari.
-* Sistemi pubblicitari o di profilazione.
-
-Prima di aggiungere servizi di prenotazione, statistiche o strumenti esterni, verificare gli effetti sulle informative privacy e cookie.
-
-Non inserire mai nel repository pubblico credenziali, dati sanitari, documenti riservati o altre informazioni sensibili.
-
-Manutenzione
-
-Le modifiche future devono preservare:
-
-* Identità grafica approvata.
-* Accuratezza delle informazioni mediche.
-* Navigazione accessibile e responsive.
-* Funzionamento dei contatti.
-* Conformità delle informazioni professionali.
-* Possibilità di recuperare le versioni precedenti.
-
-Storico versioni principali
-
-* v9.0 — Aggiornamenti professionali, PMA e collegamenti social.
-* v10.0 — Introduzione della sezione Prestazioni.
-* v10.3 — Revisione delle informative privacy e cookie.
-* v11.0 — Aggiornamento temporaneo della sede Torino.
-* v12.0 — Nuova identità grafica e ripristino della sede Torino su richiesta.
-* v12.2 — Riordino della homepage, miglioramento del layout e menu dinamico su desktop.
-
-⸻
-
-Progetto in continua evoluzione. Le informazioni pubblicate devono essere approvate dalla professionista prima del rilascio.
+- **v12.2:** versione precedente a pagina unica, da conservare come backup.
+- **v13.0:** passaggio alla struttura multipagina.
+- **v13.2:** revisione della homepage e dei collegamenti.
+- **v13.3:** semplificazione di Chi sono, Prestazioni e Contatti; titolo «Parliamone» senza punto.
+- **v13.4:** spaziatura interna migliorata per il menu mobile; sottolineatura rosa più visibile per la pagina attiva nel menu desktop/iPad.
