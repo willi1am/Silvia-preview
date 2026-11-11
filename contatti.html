@@ -405,6 +405,47 @@ body{min-height:100vh}
  .services-unified .areas{margin-top:14px;margin-bottom:25px}
  .services-unified .services-list-lead{padding:24px 0 16px}
 }
+
+/* v13.4 — mobile menu readability and active desktop navigation. */
+@media(max-width:840px){
+  .site-header .mobile-panel{
+    padding:12px;
+    min-width:250px;
+    max-width:calc(100vw - 36px);
+  }
+  .site-header .mobile-panel a{
+    display:block;
+    padding:15px 18px;
+    line-height:1.45;
+  }
+  .site-header .mobile-panel a[aria-current="page"]{
+    background:#f9eaea;
+    color:#62444e;
+    border-radius:2px;
+  }
+}
+@media(min-width:841px){
+  .site-header .nav a{position:relative;}
+  .site-header .nav a::after{
+    display:block!important;
+    content:"";
+    position:absolute;
+    left:0;right:0;
+    bottom:-12px;
+    height:2px;
+    border-radius:2px;
+    background:#c58b91;
+    transform:scaleX(0);
+    transform-origin:center;
+    transition:transform .24s ease;
+  }
+  .site-header .nav a[aria-current="page"]::after,
+  .site-header .nav a:hover::after,
+  .site-header .nav a:focus-visible::after{transform:scaleX(1)}
+}
+@media(prefers-reduced-motion:reduce){
+  .site-header .nav a::after{transition:none}
+}
 </style>
 <meta content="Silvia Zagami" name="apple-mobile-web-app-title"/></head><body>
 <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
