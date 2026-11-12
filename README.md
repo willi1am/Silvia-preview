@@ -1,60 +1,39 @@
 # Sito web — Dott.ssa Silvia Zagami
 
-Sito informativo professionale **multipagina**, responsive, pubblicato con GitHub Pages.
+## Stato della versione
 
-## Versione del progetto
+- **Release approvata per la pubblicazione:** `v13.6.0`.
+- **Versione precedente pubblicata:** `v13.5.1`, tag Git sul commit `07becead980a61e94304eca2ffc8f418009706d4`.
+- **Stato effettivo online della nuova release:** da verificare dopo il caricamento su GitHub Pages.
+- **Repository:** `willi1am/Silvia-preview`, ramo `main`, cartella `/(root)`.
+- **Dominio personalizzato:** non ancora configurato. Le immagini OG usano l'URL GitHub Pages attuale.
 
-- **Versione approvata del codice:** `v13.5.1`
-- **Repository:** `willi1am/Silvia-preview`
-- **Ramo di pubblicazione:** `main` (GitHub Pages, cartella `/(root)`)
-- **Stato della pubblicazione:** da verificare su GitHub Pages dopo ogni aggiornamento
-- **Sede Torino:** indicazioni su richiesta, senza indirizzo pubblico
-- **Dominio personalizzato e email sul dominio:** da configurare separatamente
+## Cosa cambia in v13.6.0
 
-Il numero di versione identifica il pacchetto di codice approvato. Per attestare quale versione è **effettivamente online**, fare riferimento al commit verificato e al relativo tag Git (non al solo README).
+- Copertine Open Graph 1200×630 per Home, Chi sono, Prestazioni, Contatti; Home anche per Privacy e Cookie.
+- Foto originale della dottoressa e monogramma già presenti nell'identità del sito, con consenso da confermare per la pubblicazione delle nuove copertine.
+- Favicon ICO/PNG, Apple touch icon, icone Android e Web App Manifest.
+- Tag Open Graph e Twitter/X Card personalizzati per ogni pagina, con URL completi HTTPS.
+- **Nessuna modifica ai contenuti clinici, ai recapiti e al layout visibile della v13.5.1**.
 
-## Pagine
+## Struttura e caricamento
 
-| File | Pagina |
-| --- | --- |
-| `index.html` | Home |
-| `chi-sono.html` | Profilo, formazione e attività ospedaliera |
-| `prestazioni.html` | Aree cliniche e prestazioni dettagliate |
-| `contatti.html` | Sedi e contatti |
-| `privacy.html` | Informativa privacy |
-| `cookie.html` | Informazioni sui cookie |
+La radice del repository deve contenere:
 
-Le pagine includono gli stili e le risorse necessarie; non sono richiesti hosting a pagamento, database, CMS o passaggi di compilazione.
+- `index.html`, `chi-sono.html`, `prestazioni.html`, `contatti.html`, `privacy.html`, `cookie.html`;
+- `README.md`, `CHANGELOG.md`, `site.webmanifest`;
+- la cartella **`assets/`** con tutte le immagini e icone del pacchetto.
 
-## Modifiche in v13.5.1
+**Non caricare lo ZIP nel repository.** Da iPad, se non riesci a caricare la cartella direttamente, crea prima la cartella `assets` da GitHub con il file `assets/.gitkeep` (incluso anche in questo archivio) e poi carica le immagini dall'interno. Carica gli HTML per ultimi.
 
-- Pagina **Prestazioni**: testo iniziale semplificato, seguito dai quattro ambiti clinici.
-- Sezione **«Come posso aiutarti»** spostata sotto le schede: ora introduce le cinque categorie espandibili.
-- Eliminati i titoli e le frasi ripetitive, compreso il richiamo finale «Vuoi conoscere la disponibilità?».
-- Mantenuto il riquadro «Hai bisogno di informazioni su una prestazione?».
-- Corretto il margine inferiore di «Membro SIFES-MR» su iPad verticale.
-- Nessuna modifica sostanziale alle altre pagine, ai recapiti e alle informative legali rispetto alla candidata approvata.
+## Collaudo prima di taggare
 
-## Pubblicazione da iPhone/iPad
+1. Verificare che il workflow Pages sia verde sul nuovo commit.
+2. Aprire direttamente `https://willi1am.github.io/Silvia-preview/assets/og-home.jpg` e le altre tre immagini OG.
+3. Verificare `index.html`, `prestazioni.html`, navigazione e icone in Safari e Chrome.
+4. Provare il link in WhatsApp/Messaggi; è normale che le cache delle anteprime impieghino del tempo.
+5. Solo dopo i controlli creare tag e GitHub Release `v13.6.0` sul commit pubblicato.
 
-1. **Conserva il backup** in `Sito Silvia Zagami/02_RELEASE_APPROVATE/v13.5.1/` nell'app File.
-2. Estrai l'archivio `Sito_Silvia_v13.5.1_GitHub.zip` (non caricare lo ZIP nel repository).
-3. Apri il repository GitHub, seleziona `main` e usa **Upload files**.
-4. Carica i sei file HTML e `README.md` + `CHANGELOG.md` **nella radice** del repository. Possono essere caricati in un unico commit.
-5. Messaggio di commit suggerito: `fix: streamline services page and PMA card spacing (v13.5.1)`.
-6. Apri il sito pubblico e controlla Home, Prestazioni, l'espansione delle cinque categorie, Contatti, Privacy e Cookie.
-7. Solo **dopo la verifica online**, crea un tag Git `v13.5.1` sul commit pubblicato e, facoltativamente, una GitHub Release con le note di `CHANGELOG.md`.
+## Dominio personalizzato
 
-Se ci sono problemi, interrompi il rilascio e ripristina il commit precedente da GitHub; non creare il tag su una versione che non hai verificato.
-
-## Convenzione di versionamento
-
-- `MAJOR.MINOR.PATCH` — convenzione ispirata a Semantic Versioning, adattata a questo sito.
-- `-rc.1` — candidata da provare; non è una release ufficiale.
-- Una versione ufficiale è **immutabile**: nuove correzioni ricevono un nuovo numero di versione.
-- Ogni versione pubblicata si associa a un commit, un tag Git immutabile e un backup ZIP locale.
-- Non occorre un ramo di backup per ogni release; i tag sono riferimenti puntuali più adatti.
-
-## Sicurezza e privacy
-
-Non inserire nel repository pubblico credenziali, dati di pazienti, referti o documenti riservati. Prima di integrare analytics, calendari o nuovi servizi online, verificare gli effetti sulla privacy e sulle informative. Il sito non sostituisce i canali sanitari di comunicazione protetti.
+Quando verrà acquistato, sostituire gli URL assoluti `og:url`, `og:image`, `twitter:image`, canonical (dove applicabile) e verificare il DNS/HTTPS. Questo sarà un aggiornamento separato.
