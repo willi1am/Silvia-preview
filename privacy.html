@@ -413,6 +413,28 @@ body{min-height:100vh}
 @media(prefers-reduced-motion:reduce){
   .site-header .nav a::after{transition:none}
 }
+
+/* v13.5 — revisione UX delle pagine Contatti e Chi sono */
+.contact-hero--v135 { background:#fff8f5; padding:58px 0 31px; }
+.contact-hero--v135 .eyebrow { margin-bottom:26px; }
+.contact-hero--v135 h1 { margin-bottom:24px; }
+.contact-hero-actions { display:flex; align-items:center; justify-content:space-between; gap:32px; position:relative; z-index:1; }
+.contact-hero--v135 .contact-hero-actions p { color:#6b5058; font-size:16px; line-height:1.8; max-width:780px; margin:0; }
+.contact-hero-actions .btn { flex:none; white-space:nowrap; }
+.contact-priority--v135 { background:#fff8f5; border-top:0; padding:14px 0 75px; }
+.contact-priority--v135 .priority-locations { margin-top:0; }
+.bio-merged .bio-narrative p,
+.bio-merged .bio-narrative p:first-child { font-size:18px; line-height:1.85; color:#544047; }
+.bio-credits .timeline-inline { border-top:0; padding-top:0; margin:0; gap:0; }
+.bio-credits .timeline-inline>div:not(:last-child) { padding:0 0 21px; margin:0 0 21px; border-bottom:1px solid #ebd9d7; }
+.bio-credits .timeline-inline>div:last-child { padding:0; margin:0; border-bottom:0; }
+@media(max-width:800px) {
+  .contact-hero-actions { flex-direction:column; align-items:flex-start; gap:20px; }
+  .contact-hero--v135 { padding:43px 0 23px; }
+  .contact-priority--v135 { padding:13px 0 62px; }
+  .bio-merged .bio-narrative p,
+  .bio-merged .bio-narrative p:first-child { font-size:17px; line-height:1.85; }
+}
 </style>
 <meta content="Silvia Zagami" name="apple-mobile-web-app-title"/></head><body>
 <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
