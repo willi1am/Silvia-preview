@@ -4,7 +4,7 @@ Sito informativo professionale della Dott.ssa Silvia Zagami, specialista in Oste
 
 ## Stato del progetto
 
-- **Versione dei file preparati:** v13.4 (aggiornamento navigazione)
+- **Versione dei file preparati:** v13.5 (aggiornamento navigazione)
 - **Versione attualmente online:** verificare sempre sul sito pubblico dopo il caricamento
 - **Repository:** `willi1am/Silvia-preview`
 - **Ramo di pubblicazione:** `main`
@@ -32,7 +32,7 @@ Le sei pagine contengono attualmente gli stili e le risorse necessarie nei rispe
 3. Estrarre il pacchetto di pubblicazione. **Non caricare direttamente lo ZIP.**
 4. In GitHub → `Silvia-preview` → ramo **`main`**, usare `Upload files` e caricare i **sei file HTML** nella **radice** del repository.
 5. Se i file non possono essere caricati contemporaneamente, caricare prima le cinque pagine secondarie e **`index.html` per ultimo**.
-6. Salvare con un commit descrittivo, ad esempio `Pubblicazione sito Silvia v13.4`.
+6. Salvare con un commit descrittivo, ad esempio `Pubblicazione sito Silvia v13.5`.
 7. Aprire il sito online e controllare Home, Chi sono, Prestazioni, Contatti, Privacy e Cookie, sia da smartphone sia da desktop.
 
 **Attenzione:** non selezionare il ramo di backup per la pubblicazione. La modifica al README da sola non aggiorna il sito online.
@@ -40,7 +40,7 @@ Le sei pagine contengono attualmente gli stili e le risorse necessarie nei rispe
 ## Backup e versionamento
 
 - Conservare uno ZIP completo per ciascuna release importante, scaricabile e apribile in locale.
-- Per versioni stabili, utilizzare un ramo o un tag nominato, ad esempio `backup-v12.2`, `v13.3`, `v13.4`.
+- Per versioni stabili, utilizzare un ramo o un tag nominato, ad esempio `backup-v12.2`, `v13.3`, `v13.5`.
 - GitHub conserva anche la cronologia dei commit; i backup devono permettere il ripristino senza ambiguità.
 - Non pubblicare screenshot privati, credenziali, documenti riservati o dati di pazienti nel repository pubblico.
 
@@ -58,4 +58,14 @@ Le sei pagine contengono attualmente gli stili e le risorse necessarie nei rispe
 - **v13.0:** passaggio alla struttura multipagina.
 - **v13.2:** revisione della homepage e dei collegamenti.
 - **v13.3:** semplificazione di Chi sono, Prestazioni e Contatti; titolo «Parliamone» senza punto.
-- **v13.4:** spaziatura interna migliorata per il menu mobile; sottolineatura rosa più visibile per la pagina attiva nel menu desktop/iPad.
+- **v13.5:** spaziatura interna migliorata per il menu mobile; sottolineatura rosa più visibile per la pagina attiva nel menu desktop/iPad.
+
+---
+
+*Questo README documenta i file preparati; l'effettiva pubblicazione dipende dal commit sul ramo `main` e dalla corretta esecuzione di GitHub Pages.*
+
+## Revisione UX v13.5
+
+- **Contatti e sedi:** unica intestazione, istruzioni essenziali e collegamento email subito sopra le schede, senza titoli ripetuti.
+- **Chi sono:** paragrafi narrativi tipograficamente uniformati; riquadro formazione con un solo divisore centrale.
+- **Recapiti:** il telefono di Ciriè è quello della segreteria del Centro Medico Ciriacese e non è descritto come contatto diretto della dottoressa.
