@@ -2,9 +2,10 @@
 
 Sito informativo della Dott.ssa Silvia Zagami, specialista in Ostetricia e Ginecologia.
 
-**Sito web:** https://willi1am.github.io/Silvia-preview/  
-**Versione:** v13.6.1  
-**Distribuzione:** GitHub Pages
+**Sito web ufficiale:** https://silviazagami.it/  
+**Versione del pacchetto:** v13.6.2 (approvata)  
+**Versione precedente:** v13.6.1  
+**Pubblicazione:** GitHub Pages, dominio personalizzato e HTTPS
 
 ## Pagine
 
@@ -17,22 +18,32 @@ Sito informativo della Dott.ssa Silvia Zagami, specialista in Ostetricia e Ginec
 
 ## Struttura tecnica
 
-Il sito è statico e responsive (HTML, CSS e JavaScript). Non richiede database o servizi applicativi esterni per visualizzare le pagine.
+Il sito è statico e responsive (HTML, CSS e JavaScript). Per la visualizzazione non richiede database o servizi applicativi esterni.
 
-- `assets/` — immagini del brand, favicon e copertine Open Graph.
+- `assets/` — favicon, icone multipiattaforma e copertine social.
 - `site.webmanifest` — metadati del collegamento alla schermata Home e icone per i dispositivi compatibili.
+- `robots.txt` — regole di scansione e posizione della sitemap.
+- `sitemap.xml` — URL pubblici delle sei pagine.
+- `CNAME` — dominio personalizzato configurato su GitHub Pages.
 - `CHANGELOG.md` — cronologia delle modifiche.
 
+## SEO e anteprime di condivisione
+
+- URL canonici e metadati Open Graph/Twitter fanno riferimento al dominio ufficiale `silviazagami.it`.
+- Le immagini social approvate restano in `assets/` senza modifiche.
+- Sitemap e robots.txt facilitano la scoperta delle pagine da parte dei motori di ricerca, ma non garantiscono l'indicizzazione né il posizionamento.
+- La gestione dell'indicizzazione può essere monitorata tramite Google Search Console.
+
+Il collegamento dalla sezione PMA della pagina **Chi sono** apre direttamente la categoria 04 della pagina Prestazioni.
+
+## Note sui contenuti
+
 Le informazioni cliniche e le prestazioni disponibili devono essere confermate direttamente con la professionista; la disponibilità può variare tra le sedi.
-
-## Identità visiva e condivisioni
-
-Le anteprime condivise sui social sono gestite tramite metadati Open Graph e immagini dedicate. Il collegamento alla schermata Home utilizza l'etichetta breve **Dott.ssa Zagami**, mentre i titoli delle pagine rimangono specifici per il contenuto.
 
 ## Versioni
 
 Le versioni ufficiali sono consultabili nella sezione [Releases](https://github.com/willi1am/Silvia-preview/releases). Ogni tag identifica il codice di una release.
 
-## Note
+## Diritti
 
 Contenuti e materiali del sito appartengono ai rispettivi titolari. La disponibilità pubblica del codice sorgente non implica autorizzazione al riutilizzo delle fotografie, del logo o dei testi.

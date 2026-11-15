@@ -2,7 +2,7 @@
 
 <html lang="it"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="#fffbf9" name="theme-color"/><meta content="index,follow" name="robots"/>
-<title>Dott.sa Silvia Zagami | Ginecologa</title><meta content="Dott.ssa Silvia Zagami, specialista in Ostetricia e Ginecologia. Visite, prevenzione, ecografie e PMA. Riceve a Banchette, Ciriè e Torino." name="description"/>
+<title>Dott.ssa Silvia Zagami | Ginecologa</title><meta content="Dott.ssa Silvia Zagami, specialista in Ostetricia e Ginecologia. Visite, prevenzione, ecografie e PMA. Riceve a Banchette, Ciriè e Torino." name="description"/>
 
 <style>/* Silvia Zagami — warm airy blush theme, v5.0 — independent, subscription-free static site */
 :root{--paper:#fffbf9;--cream:#fffefc;--ink:#514047;--ink2:#705b61;--rose:#c58b91;--blush:#fbe9e9;--light:#fff4f3;--line:#f0e5e3;--muted:#927c80;--serif:"Iowan Old Style","Baskerville","Palatino Linotype",Palatino,Georgia,serif;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,Helvetica,sans-serif;--shadow:0 22px 48px rgba(143,91,115,.08)}
@@ -435,6 +435,47 @@ body{min-height:100vh}
   .bio-merged .bio-narrative p,
   .bio-merged .bio-narrative p:first-child { font-size:17px; line-height:1.85; }
 }
+
+
+/* v13.6.2-rc.1 — Home: iPhone/smartphone landscape hero compact.
+   The prior two-column hero retained a 490–540px image minimum height,
+   leaving an oversized blank strip before the credentials row.
+   Limit this rule to narrow, short landscape touchscreens to preserve
+   the approved iPad/desktop and portrait layouts. */
+@media (orientation: landscape) and (max-width: 960px) and (max-height: 520px) and (pointer: coarse) {
+  .hero { padding-top: 24px; padding-bottom: 20px; }
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, .88fr);
+    align-items: start;
+    gap: clamp(14px, 2.5vw, 28px);
+  }
+  .hero-copy { padding: 10px 0 0; }
+  .hero-copy .eyebrow { margin-bottom: 13px; font-size: 10px; }
+  .hero .display {
+    font-size: clamp(34px, 5.2vw, 48px);
+    line-height: 1.09;
+    margin-bottom: 15px;
+  }
+  .hero .intro {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+  .hero .cta-row { gap: 13px; }
+  .hero .btn { min-height: 44px; padding: 10px 15px; }
+  .hero-foot { display: none; }
+  .hero-visual {
+    min-height: 0;
+    height: auto;
+    padding: 0 10px 15px 0;
+    margin: 0;
+    max-width: none;
+  }
+  .hero .portrait-frame { height: clamp(235px, 74vh, 325px); }
+  .hero-sticker { width: 148px; padding: 12px 14px; }
+  .hero-sticker .strong { font-size: 17px; }
+  .info-band .info-grid { padding-top: 13px; padding-bottom: 13px; }
+}
 </style>
 <meta content="Dott.ssa Zagami" name="apple-mobile-web-app-title"/>
 <!-- Social previews and cross-platform icons: v13.6.0 -->
@@ -443,15 +484,15 @@ body{min-height:100vh}
 <link rel="icon" href="assets/favicon-16.png?v=13.6.1" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=13.6.1" sizes="180x180">
 <link rel="manifest" href="site.webmanifest?v=13.6.1">
-<link rel="canonical" href="https://willi1am.github.io/Silvia-preview/">
+<link rel="canonical" href="https://silviazagami.it/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Dott.ssa Silvia Zagami">
 <meta property="og:title" content="Dott.sa Silvia Zagami | Ginecologa">
 <meta property="og:description" content="Dott.ssa Silvia Zagami, specialista in Ostetricia e Ginecologia. Visite, prevenzione, ecografie e PMA. Riceve a Banchette, Ciriè e Torino.">
-<meta property="og:url" content="https://willi1am.github.io/Silvia-preview/">
-<meta property="og:image" content="https://willi1am.github.io/Silvia-preview/assets/og-home.jpg">
-<meta property="og:image:secure_url" content="https://willi1am.github.io/Silvia-preview/assets/og-home.jpg">
+<meta property="og:url" content="https://silviazagami.it/">
+<meta property="og:image" content="https://silviazagami.it/assets/og-home.jpg">
+<meta property="og:image:secure_url" content="https://silviazagami.it/assets/og-home.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -459,7 +500,7 @@ body{min-height:100vh}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dott.sa Silvia Zagami | Ginecologa">
 <meta name="twitter:description" content="Dott.ssa Silvia Zagami, specialista in Ostetricia e Ginecologia. Visite, prevenzione, ecografie e PMA. Riceve a Banchette, Ciriè e Torino.">
-<meta name="twitter:image" content="https://willi1am.github.io/Silvia-preview/assets/og-home.jpg">
+<meta name="twitter:image" content="https://silviazagami.it/assets/og-home.jpg">
 </head><body>
 <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
 <header class="site-header"><div class="wrapper header-in"><a aria-label="Dott.ssa Silvia Zagami — Home" class="brand" href="index.html">

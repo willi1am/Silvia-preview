@@ -481,6 +481,10 @@ body{min-height:100vh}
 .services-unified .services-intro--after-cards{border-top:1px solid #ead8d6;padding-top:32px;margin-bottom:22px;align-items:end}
 .services-unified .services-intro--after-cards .h2{margin-top:16px}
 @media(max-width:850px){.services-unified .services-intro--after-cards{gap:14px;padding-top:28px;margin-bottom:20px}}
+
+/* v13.6.2-rc.2 — lascia il titolo della categoria visibile sotto l’header sticky. */
+#pma-prestazioni{scroll-margin-top:clamp(94px, 12vh, 132px)}
+
 </style>
 <meta content="Dott.ssa Zagami" name="apple-mobile-web-app-title"/>
 <!-- Social previews and cross-platform icons: v13.6.0 -->
@@ -489,15 +493,15 @@ body{min-height:100vh}
 <link rel="icon" href="assets/favicon-16.png?v=13.6.1" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=13.6.1" sizes="180x180">
 <link rel="manifest" href="site.webmanifest?v=13.6.1">
-<link rel="canonical" href="https://willi1am.github.io/Silvia-preview/prestazioni.html">
+<link rel="canonical" href="https://silviazagami.it/prestazioni.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Dott.ssa Silvia Zagami">
 <meta property="og:title" content="Prestazioni | Dott.ssa Silvia Zagami">
 <meta property="og:description" content="Visite ginecologiche, ostetriche, Pap test, HPV test, ecografie, consulenze PMA e valutazioni chirurgiche. Disponibilità da confermare per ogni sede.">
-<meta property="og:url" content="https://willi1am.github.io/Silvia-preview/prestazioni.html">
-<meta property="og:image" content="https://willi1am.github.io/Silvia-preview/assets/og-prestazioni.jpg">
-<meta property="og:image:secure_url" content="https://willi1am.github.io/Silvia-preview/assets/og-prestazioni.jpg">
+<meta property="og:url" content="https://silviazagami.it/prestazioni.html">
+<meta property="og:image" content="https://silviazagami.it/assets/og-prestazioni.jpg">
+<meta property="og:image:secure_url" content="https://silviazagami.it/assets/og-prestazioni.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -505,7 +509,7 @@ body{min-height:100vh}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Prestazioni | Dott.ssa Silvia Zagami">
 <meta name="twitter:description" content="Visite ginecologiche, ostetriche, Pap test, HPV test, ecografie, consulenze PMA e valutazioni chirurgiche. Disponibilità da confermare per ogni sede.">
-<meta name="twitter:image" content="https://willi1am.github.io/Silvia-preview/assets/og-prestazioni.jpg">
+<meta name="twitter:image" content="https://silviazagami.it/assets/og-prestazioni.jpg">
 </head><body>
 <a class="skip-link" href="#main-content">Vai al contenuto principale</a>
 <header class="site-header"><div class="wrapper header-in"><a aria-label="Dott.ssa Silvia Zagami — Home" class="brand" href="index.html">
@@ -544,7 +548,7 @@ body{min-height:100vh}
 <li><strong>Ecografie ostetriche</strong><span>Valutazione ecografica in gravidanza, comprese ecografie di accrescimento.</span></li>
 <li><strong>Flussimetria Doppler</strong><span>Valutazione dei flussi ematici materno-fetali, quando indicata.</span></li></ul></div>
 </details>
-<details class="service-accordion">
+<details class="service-accordion" id="pma-prestazioni">
 <summary><span class="service-num">04</span><span class="service-name"><strong>Medicina della riproduzione e PMA</strong><small>Inquadramento diagnostico e accompagnamento ai percorsi di fertilità.</small></span><span aria-hidden="true" class="service-toggle"></span></summary>
 <div class="service-body"><ul><li><strong>Inquadramento della coppia infertile</strong><span>Valutazione clinica e orientamento agli accertamenti pertinenti.</span></li>
 <li><strong>Abortività ricorrente</strong><span>Approfondimento delle possibili cause e definizione del percorso di valutazione.</span></li>
@@ -577,4 +581,20 @@ body{min-height:100vh}
 <span>Prestazioni e disponibilità possono variare tra le sedi.</span></div></div></footer>
 <script defer="">/* Minimal UI behavior. No analytics, cookies, remote calls or user tracking. */
 (()=>{const menu=document.querySelector('.mobile-menu');if(menu){document.querySelectorAll('.mobile-panel a').forEach(a=>a.addEventListener('click',()=>{menu.open=false}));document.addEventListener('keydown',e=>{if(e.key==='Escape')menu.open=false});document.addEventListener('click',e=>{if(menu.open&&!menu.contains(e.target))menu.open=false})}const y=document.querySelector('[data-year]');if(y)y.textContent=new Date().getFullYear();})();
-</script></body></html>
+</script>
+<script>
+/* Apre direttamente la categoria 04 quando il link proviene da “Chi sono”.
+   Le altre categorie mantengono il normale comportamento dei details HTML. */
+(()=>{
+  const target=document.getElementById('pma-prestazioni');
+  if(!target)return;
+  const reveal=()=>{
+    if(window.location.hash!=='#pma-prestazioni')return;
+    target.open=true;
+    requestAnimationFrame(()=>target.scrollIntoView({block:'start'}));
+  };
+  window.addEventListener('load',reveal,{once:true});
+  window.addEventListener('hashchange',reveal);
+})();
+</script>
+</body></html>
