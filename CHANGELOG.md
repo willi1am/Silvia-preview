@@ -1,5 +1,46 @@
 # CHANGELOG — Sito Dott.ssa Silvia Zagami
 
+## v13.6.3 — Versione approvata (pronta per la pubblicazione)
+
+### Fixed
+- Corretto il link del pulsante Facebook nella pagina **Contatti e sedi**: `https://www.facebook.com/61595187193989/`.
+- Eliminati dal link la struttura di condivisione `/share/` e i parametri accessori.
+
+### Unchanged
+- Nessuna modifica al design, ai testi clinici, agli altri collegamenti, a navigazione, CSS, JavaScript, immagini, SEO, `sitemap.xml`, `robots.txt` e configurazione del dominio.
+
+### Validation
+- Approvata dall'utente la candidata `v13.6.3-rc.2`.
+- File HTML, CSS, JavaScript e asset identici alla RC2 approvata; modificati soltanto `README.md` e `CHANGELOG.md` per formalizzare la release.
+- Il collaudo sul sito pubblico va effettuato **dopo** la pubblicazione su GitHub Pages, prima di creare il tag e la release.
+
+## v13.6.3-rc.2 — Candidata in revisione (NON PUBBLICATA)
+
+### Fixed
+- Sostituito il precedente link di condivisione Facebook (`/share/`) con il collegamento diretto `https://www.facebook.com/61595187193989/` nella pagina **Contatti e sedi**.
+- Rimossi i parametri aggiuntivi del link Facebook; il pulsante conserva `target="_blank"` e `rel="noopener noreferrer"`.
+
+### Invariato rispetto alla rc.1
+- Grafica, contenuti clinici, navigazione, CSS, JavaScript, immagini, icone, URL SEO, sitemap, robots.txt e tutti gli altri collegamenti.
+- La versione stabile online rimane **v13.6.2**.
+
+### Verifica richiesta
+- Confermare manualmente che il link diretto conduca al profilo **professionale corretto di Silvia** da Safari e, possibilmente, da un browser non autenticato. L'identità del profilo non è stata verificata automaticamente.
+- Non pubblicare fino all'approvazione della rc.2.
+
+## v13.6.3-rc.1 — Candidata in revisione (NON PUBBLICATA)
+
+### Fixed
+- Sostituito nella pagina **Contatti e sedi** il link del pulsante Facebook con quello del profilo professionale indicato da Silvia.
+
+### Invariato
+- Nessun cambiamento di grafica, testi clinici, CSS, JavaScript, SEO, altri collegamenti o file di risorse rispetto alla release stabile v13.6.2.
+
+### Da collaudare
+- Apertura del pulsante Facebook da iPhone/iPad e desktop. Verificare che conduca al profilo professionale corretto e che sia accessibile anche senza una sessione Facebook già attiva (se il profilo è pubblico).
+- Non pubblicare questa candidata finché non viene approvata.
+
+
 ## v13.6.2 — Versione approvata
 
 ### Fixed

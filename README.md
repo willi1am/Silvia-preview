@@ -3,8 +3,8 @@
 Sito informativo della Dott.ssa Silvia Zagami, specialista in Ostetricia e Ginecologia.
 
 **Sito web ufficiale:** https://silviazagami.it/  
-**Versione del pacchetto:** v13.6.2 (approvata)  
-**Versione precedente:** v13.6.1  
+**Versione del pacchetto:** v13.6.3 (approvata, pronta per la pubblicazione)  
+**Versione precedente pubblicata:** v13.6.2  
 **Pubblicazione:** GitHub Pages, dominio personalizzato e HTTPS
 
 ## Pagine
@@ -47,3 +47,7 @@ Le versioni ufficiali sono consultabili nella sezione [Releases](https://github.
 ## Diritti
 
 Contenuti e materiali del sito appartengono ai rispettivi titolari. La disponibilità pubblica del codice sorgente non implica autorizzazione al riutilizzo delle fotografie, del logo o dei testi.
+
+## Aggiornamento v13.6.3
+
+Corretto il collegamento Facebook nella pagina `contatti.html`: ora punta direttamente a `https://www.facebook.com/61595187193989/`, senza URL `/share/` né parametri aggiuntivi. Nessun cambiamento all'interfaccia, agli altri contenuti o alle altre risorse del sito. La candidata `v13.6.3-rc.2` è stata approvata dall'utente e la modifica deve essere verificata anche dopo il deploy sul dominio ufficiale.
